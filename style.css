@@ -1,0 +1,101 @@
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles for centering content */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4a4c50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main container styles */
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* Heading styles */
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* Button styles with gradient background */
+        #getCat {
+            background-image: linear-gradient(to right, #5c9398, #b43da0);
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 5px;
+          
+        }       
+
+        /* Image container styles */
+        #imageContainer {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            max-height: 400px;
+        }
+
+        /* Cat image styles */
+        #catImage {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Loading spinner styles */
+        .loading {
+            display: none;
+            margin: 20px auto;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Loading spinner animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            #getCat {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+   
